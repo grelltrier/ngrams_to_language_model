@@ -1,0 +1,35 @@
+# For this run, I increased the swap file to 32GB
+# It looked like around 18GB memory would have been sufficient
+
+Load dictionary
+Intersecting dictionary with unigrams
+Folder './ngrams_result/' already existed!
+Done processing the 1grams!
+Time passed since start: 5.728584376s
+5965499 ngrams with a cumulative count of 212778734 were skipped
+100214 ngrams with a cumulative count of 1947406346 were kept
+In other words 98.348% of the ngrams were skipped, which made up 9.850% of the total count
+
+Folder './ngrams_processing/' already existed!
+Translating 2-grams
+Done processing the 2grams!
+Time passed since start: 1619.525032784s
+87290055 ngrams with a cumulative count of 391191440 were skipped
+67321093 ngrams with a cumulative count of 1768980318 were kept
+In other words 56.458% of the ngrams were skipped, which made up 18.109% of the total count
+
+Translating 3-grams
+Done processing the 3grams!
+Time passed since start: 10961.039223107s
+237644390 ngrams with a cumulative count of 540139827 were skipped
+388891448 ngrams with a cumulative count of 1620018609 were kept
+In other words 37.930% of the ngrams were skipped, which made up 25.005% of the total count
+
+Done preparing all ngrams!
+Starting conversion to FST transitions
+
+Converting 2grams into transitions
+Time passed since start: 13921.738330088s
+
+Converting 3grams into transitions
+Time passed since start: 54538.937695022s

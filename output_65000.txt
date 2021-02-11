@@ -1,0 +1,31 @@
+Load dictionary
+Intersecting dictionary with unigrams
+Done processing the 1grams!
+Time passed since start: 6.244193812s
+6000160 ngrams with a cumulative count of 217056619 were skipped
+65553 ngrams with a cumulative count of 1943128461 were kept
+In other words 98.919% of the ngrams were skipped, which made up 10.048% of the total count
+
+Translating 2-grams
+Done processing the 2grams!
+Time passed since start: 1595.060962235s
+90634073 ngrams with a cumulative count of 398843574 were skipped
+63977075 ngrams with a cumulative count of 1761328184 were kept
+In other words 58.621% of the ngrams were skipped, which made up 18.464% of the total count
+
+Translating 3-grams
+Done processing the 3grams!
+Time passed since start: 10997.013314251s
+245857427 ngrams with a cumulative count of 550597392 were skipped
+380678411 ngrams with a cumulative count of 1609561044 were kept
+In other words 39.241% of the ngrams were skipped, which made up 25.489% of the total count
+
+Done preparing all ngrams!
+Starting conversion to FST transitions
+
+Converting 2grams into transitions
+Time passed since start: 13789.585364232s
+
+Converting 3grams into transitions
+Time passed since start: 63912.25455554s
+

@@ -1,0 +1,9 @@
+/target
+Cargo.lock
+LanguageModel/Old_data/
+LanguageModel/dict/
+LanguageModel/ngrams_ALL/
+LanguageModel/ngrams_result/
+LanguageModel/ngrams_processing/
+LanguageModel_TEST/ngrams_result/
+LanguageModel_TEST/ngrams_processing/
