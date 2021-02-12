@@ -288,7 +288,7 @@ pub fn generate(test_mode: bool, max_no_words: usize) {
     for (label, log_prob, offset_unigram_referring_to_bigram) in trigrams {
         writeln!(
             f_write_trigrams,
-            "{} {} {} ",
+            "{} {} {}",
             label, log_prob, offset_unigram_referring_to_bigram,
         )
         .expect("write failed");
