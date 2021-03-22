@@ -21,7 +21,6 @@ pub fn generate(test_mode: bool, max_no_words: usize) {
 
     // Folders in which the ngrams and the dictionary resides in
     let folder_all = "ngrams_ALL/";
-    //let folder_processing = "ngrams_processing/";
     let folder_result = "ngrams_result/";
     let folder_dict = "dict/";
 
@@ -92,7 +91,7 @@ pub fn generate(test_mode: bool, max_no_words: usize) {
         }
         // We only reach this part if the unigram is one of the allowed words
 
-        // We build a list of the k highest occurrences of the ngrams
+        // Build a list of the k highest occurrences of the ngrams
         if let Some(new_k_highest_count) = min_heap.insert(ngram_count) {
             threshold = new_k_highest_count;
         }
@@ -126,7 +125,7 @@ pub fn generate(test_mode: bool, max_no_words: usize) {
     for ngram_count in allowed_unigrams {
         // Calculate the log probability
         log_prob = (ngram_count as f32 / ngrams_kept[0].1 as f32).ln();
-        // Insert the infos for the unigram (label, log_probability, offset_bigram, no_bigrams)
+        // Insert the infos for the unigram (log_probability, count, offset_bigram, no_bigrams)
         unigrams.push((log_prob, ngram_count, 0, 0));
     }
     println!("Done reading the 1grams!");
