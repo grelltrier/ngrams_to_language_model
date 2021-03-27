@@ -2,11 +2,12 @@ use super::*;
 use crate::utilities::LinesIterator;
 
 #[test]
+// Test case C1
 fn test_generation() {
     let test_mode = true;
     let max_no_words = 100_000;
 
-    let root = "./LanguageModel_TEST/";
+    let root = "/LanguageModel_TEST/";
     let folder_result = "ngrams_result/";
 
     generate(test_mode, max_no_words);
