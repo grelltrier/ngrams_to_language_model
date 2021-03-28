@@ -29,7 +29,7 @@ pub fn generate(test_mode: bool, max_no_words: usize) {
         println!("Folder \'./{}\' already existed!", folder_result)
     };
 
-    // Open the file with the dictioary
+    // Open the file with the dictionary
     let fname_dict = format! {"{}{}{}", root,folder_dict,"words_allow.txt"};
     let all_allowed_words = WordListIterator::new(&fname_dict);
 
@@ -119,7 +119,7 @@ pub fn generate(test_mode: bool, max_no_words: usize) {
     }
     let allowed_unigrams = unigrams;
 
-    // Mapping all symbols of the unigrams that meet the threshold to an integer value to save space and writing the unigrams to a file
+    // Mapping all symbols of the unigrams that meet the threshold to an integer value to save space and storing them in a HashMap
     let mut unigrams: Vec<(f32, u32, u32, u16)> = Vec::new();
     let mut log_prob;
     for ngram_count in allowed_unigrams {
